@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="{% static 'portfolio/bootstrap/css/bootstrap.min.css' %} ">
+  <link rel="stylesheet" href="{% static 'portfolio/fontawesome/css/all.min.css' %} ">
+  <link rel="stylesheet" href="{% static 'portfolio/animate.min.css' %} ">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+  <style>
+    .project:hover{
+      background-color: white;
+      color: black;
+      box-shadow: 1px 1px 3px black;
+    }
+    .head{
+      color:black
+    }
+
+  </style>
+</head>
+<body>
+  <nav class=" bg-primary">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg" >
+            <div class="container-fluid">
+              <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  
+                </li>
+              </ul>
+              <div class="d-inline-block" >
+                <a href="#works" class="text-dark text-decoration-none mx-3" style="font-family: Heebo;"><b>Works</b> </a>
+                <a href="" class="text-dark text-decoration-none mx-3" style="font-family: Heebo;"><b>About Me</b></a>
+                <a href="#contact" class="text-dark  text-decoration-none mx-3" style="font-family: Heebo;"><b> Contact</b></a>
+              </div>
+            </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+  </nav>
+  <div class="bg-primary">
+    <div class="container p-5 ">
+      <div class="row " style="justify-content: space-between;">
+        <div class="col-md-6">
+          <h1 style="font-family: Heebo;">Hi, I am Olamide Odetunde, Fullstack Developer</h4>
+          <p></p>
+          <a href='https://drive.google.com/file/d/1-1NGU9-0vRnSVxSvUnR4P2X965SX9fZI/view?usp=share_link' class="btn btn-danger">Download Resume</a>
+        </div>
+        <div class="col-md-5">
+          <img src="{% static 'portfolio/img/olamide.jpg' %} " class="img-fluid img-thumbnail rounded-pill" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: #FFFDD0;">
+    <div class="container p-5 ">
+      <div class="row " style="justify-content: space-around; ">
+        <div class="col-md-3">
+          
+        </div>
+        <div class="col-md-8">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-primary" id='works'>
+    <div class="container p-5">
+      <p class='text-white' style="font-family: Heebo;">Featured Works</p>
+      <div class="row animate__animated animate__backInLeft project p-4 rounded" style="justify-content: space-between;">
+        <div class="col-md-3">
+          <a href="https://github.com/olamideodetunde/devconf" target="_blank"><img src="{% static 'portfolio/img/devconf.png' %} " alt="" class="img-fluid rounded"></a>
+        </div>
+        <div class="col-md-8 " style="font-family: Heebo;">
+          <h2 class='head' style="font-family: Heebo;">Devconf</h2>
+          <p>
+            A conference Web application that was built to register all the people that will be coming for the confernce and also to help them in finding accomodation. It was built by a team of developers where took the role of jointly creating an accomodations api that was consumed using frontend technologies.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row animate__animated animate__backInRight project p-4 rounded" style="justify-content: space-between;">
+        <div class="col-md-3">
+          <a href="https://github.com/olamideodetunde/megatech" target="_blank"><img src="{% static 'portfolio/img/electro.png' %} " alt="" class="img-fluid rounded"></a>
+        </div>
+        <div class="col-md-8">
+          <h2 class='head' style="font-family: Heebo;">Electro</h2>
+          <p>
+            An eccommerce web application where electronics are enlisted for sale. It was able to increase customer satisfaction and turnover by 5% after it had been built.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row animate__animated animate__backInLeft project p-4 rounded" style="justify-content: space-between;">
+        <div class="col-md-3">
+          <a href="http://olamideodetunde.pythonanywhere.com" target="_blank"><img src="{% static 'portfolio/img/hire.png' %} " alt="" class="img-fluid rounded"></a>
+        </div>
+        <div class="col-md-8">
+          <h2 class='head' style="font-family: Heebo;">Hire</h2>
+          <p>
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='contact' style='background-color:#FFFDD0;'>
+    <div class='container p-5'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <div class='mb-5'>
+            <h1 class='text-center' style="font-family: Heebo;">Contact Me</h1>
+          </div>
+          
+          <p class='text-center'><a href='mailto:olamideode574@gmail.com' class='btn btn-primary btn-lg col-4'> Contact </a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class='bg-primary'>
+    <div class='container p-5'>
+      <div class='row'>
+        <div class="col-md-12 text-center">
+         <a href='https://github.com/olamideodetunde' target='_blank' style='color:white' class='mx-2' ><i class="fa-brands fa-3x fa-square-github"></i></a>
+         <a href='https://www.instagram.com/itsjustanotherloner/' target='_blank' style='color:white' class='mx-2' ><i class="fa-brands fa-3x fa-instagram"></i></a>
+         <a href='https://www.linkedin.com/in/olamide-odetunde-2717bb19b/' target='_blank' style='color:white' class='mx-2' ><i class="fa-brands fa-3x fa-linkedin"></i></a>
+         <a href='https://twitter.com/OlamideOdetund1' target='_blank' style='color:white' class='mx-2' ><i class="fa-brands fa-3x fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-12 text-center text-white' style="font-family: Heebo;">
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="{% static 'portfolio/bootstrap/js/bootstrap.min.js' %} "></script>
+  <script src="{% static 'portfolio/fontawesome/js/all.min.js' %} "></script>
+</body>
+</html>
